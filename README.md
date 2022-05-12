@@ -2,4 +2,4 @@
 
 Numerical computing with python 3.x
 
-I love ☕, 🍕, 🥑, and 🏐💙
+I love ☕, 🍕, 🥑, 💻, and 🏐💙
