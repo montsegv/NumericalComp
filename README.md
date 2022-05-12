@@ -1,3 +1,5 @@
 # NumericalComputing
 
-Numerical computing with python 3.x,
+Numerical computing with python 3.x
+
+☕
