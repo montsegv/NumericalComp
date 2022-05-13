@@ -1,21 +1,31 @@
 #
-#Dados: (-1,3), (0,-7), (4,7) y (5,11) estimar el polinomio interpolante
-#2do
+# generate a function to produce points 
+# to be used as x-axis
+# 
+# INPUT
+# -> a initial point
+# -> b final point
+# -> c increment
+#
+# OUTPUT
+# <- list of points
+#
+# for instance for this range [1,10,.1]
+# it will produce 100 points
+# [1.0, 1.1, ... , 9.9, 10]
 #
 
-from re import X
+import sys
+#import matplotlib.pyplot as plt
+#import numpy as np
 
-p1 = (-1,3)
-p2 = (0,-7)
-p3 = (4,7)
-p4 = (5,11)
-x = float(input("Ingresa el valor de X: "))
+sec = (x/10 for x in range(1, 100)) 
+for x in sec:
+    px = np.array([5, x]) 
+py = np.array([1, 30]) 
+plt.plot(px, py)
+plt.show()
 
-def fn(x,p1,p2,p3,p4):
-    r1=(((x-p2[0])*(x-p3[0])*(x-p4[0]))/((p1[0]-p2[0])*(p1[0]-p3[0])*(p1[0]-p4[0])))*(p1[1])
-    r2=(((x-p1[0])*(x-p3[0])*(x-p4[0]))/((p2[0]-p1[0])*(p2[0]-p3[0])*(p2[0]-p4[0])))*(p2[1])
-    r3=(((x-p1[0])*(x-p2[0])*(x-p4[0]))/((p3[0]-p1[0])*(p3[0]-p2[0])*(p3[0]-p4[0])))*(p3[1])
-    r4=(((x-p1[0])*(x-p2[0])*(x-p3[0]))/((p4[0]-p1[0])*(p4[0]-p2[0])*(p4[0]-p3[0])))*(p4[1]) 
-    return r1+r2+r3+r4
-
-print("El valor de Y es: ", fn(x,p1,p2,p3,p4))
+#Grafica
+'''plt.savefig(sys.stdout.buffer)
+#sys.stdout.flush()'''
