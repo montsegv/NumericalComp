@@ -6,12 +6,14 @@ Created on Thu May  11 20:42:11 2022
 #
 # Diferencias finitas progresivas
 # Método1 para calcular Derivación Numérica
-#
+
 
 from math import sin
 
 def f(x):
-    return 2**(sin(x**3))
+    return x**2  #(sin(x**3))
+
+print(f(2))
 
 x0=1.7
 h1=0.5
