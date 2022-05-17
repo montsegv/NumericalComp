@@ -16,9 +16,6 @@ def f(x):
 a = -1
 b = 2
 
-r1 = f(a)*(b-a)
-print('Regla del Rectángulo: ',r1)
-
 m = (a+b)/2
 r2 = f(m)*(b-a)
 print('Regla del punto medio: ',r2)

@@ -25,8 +25,8 @@ print('r3 = ', r3)
 
 h4 = 0.00001
 r4 = (f(x0+h4)-f(x0))/h4
-print('r4=',r4)
+print('r4 =',r4)
 
 h5 = 0.00000001
 r5 = (f(x0+h5)-f(x0))/h5
-print('r5=',r5)
+print('r5 =',r5)
